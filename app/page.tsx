@@ -13,11 +13,11 @@ export default function Page() {
         {/* Brand Logo */}
         <div className="flex justify-center mb-4">
           <Image
-            src="/brand-logo.png" // <-- replace with your logo path in /public
+            src="/brand-logo.jpg" // <-- replace with your logo path in /public
             alt="Brand Logo"
-            width={80}
-            height={80}
-            className="rounded-full shadow-md"
+            width={280}
+            height={40}
+            className="rounded-sm shadow-md"
             priority
           />
         </div>
