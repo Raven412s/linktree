@@ -8,7 +8,7 @@ import Image from "next/image";
 
 export default function Page() {
   return (
-    <main className="flex min-h-screen items-center justify-center bg-gradient-to-br from-gray-50 to-gray-100 p-6">
+    <main className="flex min-h-screen items-start justify-center bg-gradient-to-br from-gray-50 to-gray-100 p-6">
       <div className="grid gap-6 w-full max-w-lg text-center">
         {/* Brand Logo */}
         <div className="flex justify-center mb-4">
@@ -46,43 +46,6 @@ export default function Page() {
           </CardContent>
         </Card>
 
-        {/* Facebook */}
-        <Card className="shadow-md hover:shadow-lg transition rounded-2xl">
-          <CardContent className="flex items-center justify-between p-4">
-            <div className="flex items-center gap-3">
-              <Facebook className="text-blue-600 w-6 h-6" />
-              <span className="font-medium">Facebook</span>
-            </div>
-            <Button asChild variant="outline">
-              <Link
-                href="https://facebook.com/yourclient"
-                target="_blank"
-                rel="noopener noreferrer"
-              >
-                Visit
-              </Link>
-            </Button>
-          </CardContent>
-        </Card>
-
-        {/* Google Maps */}
-        <Card className="shadow-md hover:shadow-lg transition rounded-2xl">
-          <CardContent className="flex items-center justify-between p-4">
-            <div className="flex items-center gap-3">
-              <MapPin className="text-green-600 w-6 h-6" />
-              <span className="font-medium">Find us on Google Maps</span>
-            </div>
-            <Button asChild variant="outline">
-              <Link
-                href="https://maps.app.goo.gl/i448fKFvyXWUgNPR7"
-                target="_blank"
-                rel="noopener noreferrer"
-              >
-                Open
-              </Link>
-            </Button>
-          </CardContent>
-        </Card>
 
         {/* Google Reviews */}
         <Card className="shadow-md hover:shadow-lg transition rounded-2xl">
@@ -103,6 +66,9 @@ export default function Page() {
           </CardContent>
         </Card>
       </div>
+      <p className="fixed bottom-0 text-muted-foreground text-lg capitalize lg:text-xl bg-gray-200 py-1.5 w-full text-center">
+      <span className="font-semibold uppercase">viacam productions</span>
+      </p>
     </main>
   );
 }
