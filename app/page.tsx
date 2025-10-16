@@ -1,10 +1,10 @@
 "use client";
 
-import { Card, CardContent } from "@/components/ui/card";
 import { Button } from "@/components/ui/button";
-import { Instagram, Facebook, MapPin, Star } from "lucide-react";
-import Link from "next/link";
+import { Card, CardContent } from "@/components/ui/card";
+import { Instagram, Star } from "lucide-react";
 import Image from "next/image";
+import Link from "next/link";
 
 export default function Page() {
   return (
